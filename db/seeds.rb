@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+after_work_run = Workout.create(title: "After work Run")
+monday_volleyball = Workout.create(time: "Monday Night Volleyball")
