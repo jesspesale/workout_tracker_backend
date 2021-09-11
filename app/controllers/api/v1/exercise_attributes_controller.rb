@@ -2,7 +2,7 @@ class Api::V1::ExerciseAttributesController < ApplicationController
 
     def index
         exercise_attributes = ExerciseAttribute.all
-        render json: exercise_attributes
+        render json: ExerciseAttributeSerializer.new(exercise_attributes)
     end
 
     def create
