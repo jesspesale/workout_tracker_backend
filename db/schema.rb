@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2021_09_10_014822) do
     t.integer "calories"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "workout_id"
+    t.integer "workout_id", null: false
     t.index ["workout_id"], name: "index_exercise_attributes_on_workout_id"
   end
 
