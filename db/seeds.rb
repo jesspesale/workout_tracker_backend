@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Workout.destroy_all
-Syllabus.destroy_all
+ExerciseAttribute.destroy_all
 
 after_work_run = Workout.create(title: "After work Run")
 monday_volleyball = Workout.create(title: "Monday Night Volleyball")
