@@ -14,9 +14,9 @@ ActiveRecord::Schema.define(version: 2021_09_10_014822) do
 
   create_table "exercise_attributes", force: :cascade do |t|
     t.string "category"
+    t.integer "calories"
     t.string "date"
     t.integer "duration"
-    t.integer "calories"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "workout_id", null: false
