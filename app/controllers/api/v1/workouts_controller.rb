@@ -5,9 +5,8 @@ class Api::V1::WorkoutsController < ApplicationController
         render json: WorkoutSerializer.new(workouts)
     end
 
-    # def create
-        
-    # end
+
+
 
 
 end

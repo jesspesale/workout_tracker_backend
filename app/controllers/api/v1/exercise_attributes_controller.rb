@@ -7,7 +7,7 @@ class Api::V1::ExerciseAttributesController < ApplicationController
 
     def create
         exercise_attribute = ExerciseAttribute.new(exercise_attributes_params)
-         #byebug 
+        #  byebug 
          workout = Workout.new(title: params[:title])
          exercise_attribute.workout = workout
         if exercise_attribute.save 
@@ -23,7 +23,7 @@ class Api::V1::ExerciseAttributesController < ApplicationController
     private
 
     def exercise_attributes_params
-        params.require(:exercise_attribute).permit(:category, :calories, :date, :duration, :workout_id, :title)
+        params.require(:exercise_attribute).permit(:title, :category, :calories, :date, :duration, :workout_id)
     end
 
 end
