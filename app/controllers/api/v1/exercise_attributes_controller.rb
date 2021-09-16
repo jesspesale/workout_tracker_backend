@@ -7,9 +7,8 @@ class Api::V1::ExerciseAttributesController < ApplicationController
 
     def create
         exercise_attribute = ExerciseAttribute.new(exercise_attributes_params)
-        #  byebug 
-         workout = Workout.new(title: params[:title])
-         exercise_attribute.workout = workout
+          workout = Workout.find_by(title: params[:title])
+        #  exercise_attribute.workout = workout
         if exercise_attribute.save 
             render json: exercise_attribute, status: :accepted
                                         # allows us to send status codes with our fetch req
@@ -23,7 +22,7 @@ class Api::V1::ExerciseAttributesController < ApplicationController
     private
 
     def exercise_attributes_params
-        params.require(:exercise_attribute).permit(:title, :category, :calories, :date, :duration, :workout_id)
+        params.require(:exercise_attribute).permit(:title, :category, :calories, :duration, :workout_id)
     end
 
 end
