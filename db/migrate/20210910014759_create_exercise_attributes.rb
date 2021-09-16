@@ -2,7 +2,6 @@ class CreateExerciseAttributes < ActiveRecord::Migration[6.1]
   def change
     create_table :exercise_attributes do |t|
       t.string :category
-      t.string :date
       t.integer :duration
       t.integer :calories
 
