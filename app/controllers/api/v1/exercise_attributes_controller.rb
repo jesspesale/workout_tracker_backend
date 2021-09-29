@@ -19,7 +19,6 @@ class Api::V1::ExerciseAttributesController < ApplicationController
     end
 
     def destroy   
-        # byebug
         exercise_attribute = ExerciseAttribute.find_by_id(params[:id])
         exercise_attribute.destroy
         render json: exercise_attribute #, status: :accepted

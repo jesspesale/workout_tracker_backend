@@ -16,5 +16,5 @@ Bug reports and pull requests are welcome on GitHub at:
     https://github.com/jesspesale/workout_tracker_backend
 
 # License
-License can be found in workout_tracker_backend repo under LICENSE.txt
+License can be found in workout_tracker_backend repo under LICENSE
  
