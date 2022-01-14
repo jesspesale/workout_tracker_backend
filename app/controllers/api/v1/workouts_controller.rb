@@ -12,7 +12,6 @@ class Api::V1::WorkoutsController < ApplicationController
         
         exercise_attribute.workout = workout
         exercise_attribute.save
-         # byebug
     
         if workout.save
             render json: WorkoutSerializer.new(workout)
