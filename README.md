@@ -4,7 +4,7 @@ Welcome to Workout Tracker! This is a single page application that is used to tr
 # Installation
 There are two repositories needed for this program; workout_tracker_backend and workout_tracker_frontend. The frontend javascript repository can be found here:
     https://github.com/jesspesale/workout_tracker_frontend
-Once both repositories have been cloned, use your favorite IDE and pull up the terminal to load both repos. Run bundle install and rake db:migrate in your backend, then start the server by running rails s in your frontend terminal. Navigate to the browser by running open index.html and everything should be there.
+Once both repositories have been cloned, use your favorite IDE and pull up the terminal to load both repos. Run bundle install and rake db:migrate in your backend, then start the server by running rails s in your backend terminal. Navigate to the browser by running open index.html and everything should be there.
 
 # Usage
 The usage for this application is strictly html (index.html). The backend will need the rails server command in the terminal.
